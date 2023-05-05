@@ -12,7 +12,7 @@ export default function Home() {
                         <li><a href="/fsdfsd">Главная</a></li>
                         <li><a href="#">Документация</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">О нас</a></li>
                     </ul>
                     <div className={indexStyle.buttons}>
                         <button className={indexStyle.signIn}>Авторизация</button>
