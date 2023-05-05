@@ -17,7 +17,7 @@ export default function Home() {
                 <nav className={indexStyle.nav}>
                     <Link legacyBehavior  href="/">
                     <a className={indexStyle.logo}>
-                        <img src="/images/img.png" alt="Your custom logo" />
+                        <img src="/images/img.png" alt="Lapay Image" />
                     </a>
                     </Link>
                     <ul className={indexStyle.menu}>
