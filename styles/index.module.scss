@@ -1,0 +1,110 @@
+@import "@fontsource/roboto-mono";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Добавляем прозрачность для применения размытия */
+  backdrop-filter: blur(4px); /* Размываем фон */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 155px;
+  height: 33px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: grey;
+  text-decoration: none;
+
+  font-family: 'Open Sans', bold;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #000;
+  transition: 0.2s;
+}
+.buttons {
+  margin-top: 0px; // задаем отступ сверху
+  text-align: center; // прижимаем кнопки к центру
+  padding-left: 350px;;
+}
+
+.signIn {
+  height: 35px;
+  color: white;
+  width: 120px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Segoe UI Semibold', bold;
+  font-size: 14.5px;
+  font-weight: 550;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.signIn:hover {
+  background-color: rgba(0, 0, 0, 0.84);
+  transition: 0.3s;
+}
+
+.signIn:active::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -50px;
+  left: -50px;
+  background: radial-gradient(circle, transparent 20%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 80%, transparent 80%);
+  transform: scale(0);
+  animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
