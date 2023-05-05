@@ -31,7 +31,7 @@ export default function Home() {
                         <li><a>FAQ</a></li>
                         </Link>
                         <Link legacyBehavior  href="/about">
-                        <li><a>О нас</a></li>
+                        <li><a>О&nbsp;нас</a></li>
                         </Link>
                     </ul>
                     <div className={indexStyle.buttons}>
